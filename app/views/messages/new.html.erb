@@ -1,0 +1,8 @@
+<h1> new message bitch </h1>
+
+<%= form_for @message do |f| %>
+	<%= f.label :body %>
+	<%= f.text_area :body, class: "form-control" %>
+
+	<%= f.submit "send message", class: "btn btn-primary" %>
+<% end %>
